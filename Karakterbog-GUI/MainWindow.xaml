@@ -1,0 +1,27 @@
+﻿<Window x:Class="Karakterbog_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Karakterbog_GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="325*"/>
+            <RowDefinition Height="71*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="Matematik" HorizontalAlignment="Left" Margin="117,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Grid.Row="1"/>
+        <Button x:Name="Tilføj_knap" Content="Tilføj" HorizontalAlignment="Left" Margin="286,151,0,0" VerticalAlignment="Top" Grid.Row="1" Height="57" Width="108" Click="Tilføj_knap_Click"/>
+        <TextBox x:Name="Dansk" HorizontalAlignment="Left" Margin="280,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="Englesk" HorizontalAlignment="Left" Margin="447,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label Content="Matematik" HorizontalAlignment="Left" Margin="144,28,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Dansk" HorizontalAlignment="Left" Margin="307,28,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Engelsk" HorizontalAlignment="Left" Margin="474,28,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="996,117,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="Navn" HorizontalAlignment="Left" Margin="603,74,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_2"/>
+        <Label x:Name="Navn_Label" Content="Navn" HorizontalAlignment="Left" Margin="644,28,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
